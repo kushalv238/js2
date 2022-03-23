@@ -11,4 +11,30 @@ var height = window.prompt("Enter your height in meters: ");
 
 const bmi = weight/Math.pow(height, 2)
 
-console.log("BMI: " + bmi)
+console.log("Weight: " + height + "kg | Height: " + height + "m\nBMI: " + bmi)
+
+if (bmi < 18.5) {
+    console.log("Status: Underweight")
+}
+
+else if(bmi >= 18.5 && bmi < 25) {
+    console.log("Status: Normal Weight")
+}
+
+else if(bmi >= 25 && bmi < 30) {
+    console.log("Status: Overweight")
+}
+
+else {
+    if(bmi >= 30 && bmi < 35) {
+        console.log("Status: Obisity - Mild (Class 1)")
+    }
+    else if(bmi >= 35 && bmi < 40) {
+        console.log("Status: Obisity - Moderate (Class 2)")
+    }
+    else if(bmi > 40) {
+        console.log("Status: Obisity - Morbid (Class 3)")
+    }
+
+    console.log("Consult a doctor!")
+}
