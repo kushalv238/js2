@@ -11,7 +11,7 @@ var height = window.prompt("Enter your height in meters: ");
 
 const bmi = weight/Math.pow(height, 2)
 
-console.log("Weight: " + height + "kg | Height: " + height + "m\nBMI: " + bmi)
+console.log("Weight: " + weight + "kg | Height: " + height + "m\nBMI: " + bmi)
 
 if (bmi < 18.5) {
     console.log("Status: Underweight")
